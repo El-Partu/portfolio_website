@@ -29,5 +29,9 @@ export default defineConfig({
       },
     },
   },
+    server: {
+        https: false,
+        host: true,
+    },
   base: process.env.NODE_ENV === 'production' ? process.env.APP_URL + '/' : '/',
 });
